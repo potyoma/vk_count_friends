@@ -4,7 +4,7 @@ from datetime import date # to count age
 import operator # for sorting
 
 # data for request 
-token = '243ceda5243ceda5243ceda501244cf4c32243c243ceda57a5c553a5c8ac03c9b8eb1b8'
+token = 'this is where your access token should be'
 domain = 'https://api.vk.com/method'
 fields = 'bdate'
 
@@ -29,5 +29,5 @@ def calc_age(user_id):
     number_age.sort(key = operator.itemgetter(1), reverse = True)
     return number_age
 
-print(calc_age('444830045'))
+print(calc_age("place user's id here"))
 
